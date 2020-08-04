@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#00BCD4">
+        <ImageView
+            android:id="@+id/gambar1"
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:paddingTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/download"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/gambar1"
+            android:text="SMKN 4 Bandung"
+            android:textSize="24dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="#00BCD4">
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/nama"
+            android:layout_centerHorizontal="true"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/pw2"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pw"
+            android:layout_centerHorizontal="true"
+            android:text="Password Ulang" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pw2"
+            android:layout_centerHorizontal="true"
+            android:text="Daftar" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/nama1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Syahrul Ramadhan"
+        android:textSize="28dp"
+        android:textColor="#000"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/nama2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/nama1"
+        android:text="Nama"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/nama3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nama2"/>
+    <TextView
+        android:id="@+id/alamat1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/nama3"
+        android:text="Alamat"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/alamat2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/alamat1"/>
+    <TextView
+        android:id="@+id/kampus1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/alamat2"
+        android:text="Kampus"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/kampus2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kampus1"/>
+
+    <ImageView
+        android:id="@+id/foto1"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/kampus2"
+        android:src="@drawable/ahrul" />
+
+    <ImageView
+        android:id="@+id/foto2"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/kampus2"
+        android:layout_marginLeft="54dp"
+        android:layout_toRightOf="@+id/foto1"
+        android:src="@drawable/ahrul" />
+
+    <ImageView
+        android:id="@+id/foto3"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/kampus2"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@+id/foto2"
+        android:src="@drawable/ahrul" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/foto1"
+        android:layout_marginLeft="30dp"
+        android:text="Kembali" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/foto1"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/cancel"
+        android:text="Selanjutnya" />
+</RelativeLayout>
